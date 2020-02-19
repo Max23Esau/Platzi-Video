@@ -182,7 +182,7 @@ body::-webkit-scrollbar {
 }
 
 .carrousel {
-  margin: 0 .6em;
+  margin: 0 .8em;
   overflow-x: scroll;
   position: relative;
   max-width: auto;
@@ -293,7 +293,7 @@ body::-webkit-scrollbar {
 .footer a {
   color: white;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 18px;
   text-decoration: none;
 }
 
@@ -327,6 +327,13 @@ body::-webkit-scrollbar {
   .header__menu{
     margin-right: 1em;
   }
+  .carrousel-item__details{
+    opacity: 1;
+  }
+  .footer a{
+    font-size: .9em;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 479px){
@@ -341,9 +348,7 @@ body::-webkit-scrollbar {
     text-align: center;
     font-size: 2em;
   }
-  .footer a{
-    font-size: .8em;
-  }
+ 
 }
 
 @media only screen and (max-width: 375px){
@@ -360,9 +365,6 @@ body::-webkit-scrollbar {
   .main__title {
     text-align: center;
     font-size: 1.9em;
-  }
-  .footer a{
-    font-size: .6em;
   }
 
 }
