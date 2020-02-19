@@ -1,3 +1,6 @@
+$blanco: $blanco;
+
+
 ::-webkit-scrollbar {
     width: 7px;
     height: 7px;
@@ -136,7 +139,7 @@ body::-webkit-scrollbar {
 
 .categories__title
 {
-    color: white;
+    color: $blanco;
     font-size: 20px;
     position: absolute;
     padding-left: 30px;
@@ -166,7 +169,7 @@ body::-webkit-scrollbar {
 {
     margin: 70px 0px;
     padding-bottom: 10px;
-    white-space: nowrap;
+    $blanco-space: nowrap;
 }
 
 .carrousel-item
@@ -245,7 +248,7 @@ body::-webkit-scrollbar {
 }
 .footer a
 {
-    color: white;
+    color: $blanco;
     cursor: pointer;
     font-size: 14px;
     padding-left: 30px;
