@@ -315,11 +315,6 @@ body::-webkit-scrollbar {
 
 /*# sourceMappingURL=estilos.css.map */
 
-@media only screen and (max-width: 1024px){
-
-
-}
-
 @media only screen and (max-width: 768px){
 
   .main__title{
@@ -335,11 +330,6 @@ body::-webkit-scrollbar {
 }
 
 @media only screen and (max-width: 479px){
-  
-
- /*  .header__menu--profile p{
-    display: none;
-  } */
   
   .header__menu{
     height: auto;
@@ -361,7 +351,7 @@ body::-webkit-scrollbar {
   .header__menu--profile p{
     display: none;
   }
-  
+
   .header__menu ul{
     margin: 0 0 0 -2em;
     text-align: center;
