@@ -70,22 +70,24 @@ body::-webkit-scrollbar {
   outline: none;
 }
 
-.header__menu ul {
+.header__menu--list {
   display: none;
   list-style: none;
-  margin: 0px 0px 0px -10px;
   padding: 0px;
+  margin: 0 0 10px 0;
   position: absolute;
   text-align: right;
+  font-size: 1.1em;
 }
 
-.header__menu li {
+.header__menu--list li {
   margin: 10px 10px;
 }
 
-.header__menu li a {
+.header__menu--list a {
   color: #fff;
   text-decoration: none;
+  border-radius: 10px;
 }
 
 .header__menu li a:hover {
@@ -110,6 +112,7 @@ body::-webkit-scrollbar {
 .header__menu--profile img {
   height: 50px;
   width: 50px;
+  z-index: 20;
 }
 
 .header__menu--profile p {
@@ -315,7 +318,7 @@ body::-webkit-scrollbar {
 
 /*# sourceMappingURL=estilos.css.map */
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
 
   .main__title{
     text-align: center;
@@ -327,6 +330,47 @@ body::-webkit-scrollbar {
   .header__menu{
     margin-right: 1em;
   }
+  .header__menu:hover ul {
+    display: flex;
+  }
+  .header__menu--profile p{
+    display: none;
+  }
+ 
+  .header__menu--list {
+  position: fixed;
+  background: rgba(5, 5, 5, .8);
+  z-index: 10;
+  top: 0;
+  left: 100vw;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s;
+  list-style: none;
+  padding: 0px;
+  text-align: right;
+  flex-direction: column;
+}
+.header__menu--list.is-active{
+  left: 0;
+}
+.header__menu--list a
+{
+  font-size: 1.2em;
+  padding: .5em;
+  
+}
+.header__menu--list li{
+  margin: 30px 0;
+}
+.header__menu--list li a:hover {
+    background: #e55d87;
+    text-decoration: none;
+}
   .carrousel-item__details{
     opacity: 1;
   }
@@ -357,7 +401,7 @@ body::-webkit-scrollbar {
     display: none;
   }
 
-  .header__menu ul{
+  .header__menu--list ul{
     margin: 0 0 0 -2em;
     text-align: center;
   }
